@@ -16,11 +16,16 @@
 *****************************************/
 
 header {
-    
+    width: 960px;
+    height: 250px;
+    background-color: magenta;
+    margin: 0 auto;
 }
 
 main {
-
+    background-color: blue;
+    width: 960px;
+    margin: 0 auto;
 }
 
 
@@ -41,3 +46,43 @@ main {
 /****************************************
   Components
 *****************************************/
+
+
+
+.logo {
+    position: absolute;
+
+}
+
+
+
+.search {
+
+}
+
+.puppy-menus {
+
+}
+
+.flex-puppies {
+
+}
+
+.tile-puppies {
+
+}
+
+.welcome-text > h1 {
+    text-align: center;
+}
+
+.welcome-text > h6 {
+    text-align: center;
+}
+
+---------- /* 3 boxes that overlap into the hero element */ ----------
+.services .service-items {
+    list-style: none;
+    display: inline-flex;
+    margin: 0 auto;
+}
