@@ -23,11 +23,13 @@ header {
 }
 
 main {
-    background-color: blue;
     width: 960px;
     margin: 0 auto;
 }
 
+body {
+    background-color: green;
+}
 
 /****************************************
   Helpers
@@ -61,14 +63,12 @@ main {
 }
 
 .puppy-menus {
-
-}
-
-.flex-puppies {
+    display: flex;
 
 }
 
 .tile-puppies {
+    flex: 0.5;
 
 }
 
@@ -80,9 +80,33 @@ main {
     text-align: center;
 }
 
----------- /* 3 boxes that overlap into the hero element */ ----------
+/*---------- 3 boxes that overlap into the hero element ----- */
 .services .service-items {
     list-style: none;
     display: inline-flex;
     margin: 0 auto;
 }
+
+
+/* ----- Flexbox menu. 3 puppies on the left ----- */
+.puppies-featured {
+    flex: 0.5;
+    display: flex;
+    max-width: 480px;
+}
+
+.puppies-featured > img {
+    width: 50px;
+    height: 50px;
+}
+
+.puppies-featured > h3 {
+    flex: 0.5;
+    background-color: red;
+}
+
+.puppies-featured > p {
+    flex: 0.5;
+    background-color: yellow;
+}
+/* ----- End of flexbox puppies on left ---- /*
