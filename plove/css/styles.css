@@ -50,15 +50,24 @@ body {
   Components
 *****************************************/
 
+.search-button {
+    background-color: orange;
+}
 
+.navbar {
+    position: absolute;
+    min-height: 50px;
+    background-color: turquoise;
+    top: 15%;
+    left: 25%;
+}
 
 .logo {
     position: absolute;
+    margin: 0;
     top: 0;
     left: 0;
 }
-
-
 
 .search {
     position: absolute;
@@ -80,24 +89,35 @@ body {
 .welcome-text > h1 {
     text-align: center;
     position: absolute;
-    bottom: 0;
-    right: 50;
+    bottom: 5%;
+    right: 30%;
 }
 
 .welcome-text > h6 {
     text-align: center;
     position: absolute;
+    bottom: 10%;
+    right: 20%;
 }
 
 /*---------- 3 boxes that overlap into the hero element ----- */
-.services .service-items {
-    list-style: none;
-    display: inline-flex;
-    margin: 0 auto;
+
+.services-menu {
+    width: 960px;
+    text-align: center;
 }
 
+.services {
+    width: 290px;
+	height: 190px;
+	display: inline-block;
+	background-color: lime;
+	margin-left: 9px;
+	margin-right: 9px;
+	transform: translateY(-20px);
+}
 
-/* ----- Flexbox menu. 3 puppies on the left ----- */
+/* ----- Media objects, 3 puppies on the left ----- */
 .puppies-featured {
     flex: 0.5;
     display: flex;
