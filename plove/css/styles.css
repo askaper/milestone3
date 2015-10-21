@@ -59,7 +59,9 @@ body {
     min-height: 50px;
     background-color: turquoise;
     top: 15%;
-    left: 25%;
+    left: 3.25%;
+    width: 900px;
+    text-align: center;
 }
 
 .logo {
@@ -100,6 +102,12 @@ body {
     right: 20%;
 }
 
+/*---------- Media object and tile menu background --------*/
+
+.puppy-menus {
+    background-color: blue;
+}
+
 /*---------- 3 boxes that overlap into the hero element ----- */
 
 .services-menu {
@@ -118,10 +126,12 @@ body {
 }
 
 /* ----- Media objects, 3 puppies on the left ----- */
+
 .puppies-featured {
-    flex: 0.5;
+    flex: 1;
     display: flex;
     max-width: 480px;
+    margin-bottom: 10px;
 }
 
 .puppies-featured > img {
@@ -130,12 +140,11 @@ body {
 }
 
 .puppies-featured > h3 {
-    flex: 0.5;
+    flex: 1;
     background-color: red;
 }
 
 .puppies-featured > p {
-    flex: 0.5;
     background-color: yellow;
 }
 /* ----- End of flexbox puppies on left ---- /*
