@@ -29,12 +29,13 @@ $(function(){
 
     }
 
+//The renderThread function takes some more thought. It will need to call off to the other two render functions to get its contents, then it will take those "sub templates" and build them into the thread template. Even though renderThread won't use the user and message values directly, it will need to pass those along to the renderTweet.
 
     var threadTemplate = Handlebars.compile($('#template-thread').html())
 
-        function renderThread(){
+        function renderThread(user, message){
             return renderThread()
-            
+
     }
 
     var tweetTemplate = Handlebars.compile($('#template-tweet').html())
