@@ -16,16 +16,17 @@
 *****************************************/
 
 header {
-    width: 960px;
     height: 250px;
     background-color: magenta;
+
     margin: 0 auto;
     position: relative;
 }
 
 main {
-    width: 960px;
+
     margin: 0 auto;
+    background-color: yellow;
 }
 
 body {
@@ -43,8 +44,29 @@ body {
   Layout
 *****************************************/
 
+div.1 {
+    background-color: yellow;
+}
 
+.hero {
+    width: 80%;
+    margin: auto;
+}
 
+main {
+    background-color: purple;
+
+}
+
+div.2 {
+    width: 80%;
+    margin: auto;
+}
+
+div.puppy-menus {
+    width: 80%;
+    margin:auto;
+}
 
 /****************************************
   Components
@@ -55,13 +77,24 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    /*position: absolute;
     min-height: 50px;
     background-color: turquoise;
     top: 15%;
     left: 3.25%;
     width: 900px;
+    text-align: center;*/
+    width: 100%;
+    min-height: 50px;
     text-align: center;
+    margin: auto;
+    background-color: turquoise;
+    position: absolute;
+    top: 15%;
+}
+
+.navbar > a {
+    margin-left: 20px;
 }
 
 .logo {
@@ -88,6 +121,8 @@ body {
 
 }
 
+
+
 .welcome-text > h1 {
     text-align: center;
     position: absolute;
@@ -111,8 +146,10 @@ body {
 /*---------- 3 boxes that overlap into the hero element ----- */
 
 .services-menu {
-    width: 960px;
+    width: 80%;
+    margin: auto;
     text-align: center;
+    background-color: red;
 }
 
 .services {
@@ -128,23 +165,55 @@ body {
 /* ----- Media objects, 3 puppies on the left ----- */
 
 .puppies-featured {
-    flex: 1;
     display: flex;
     max-width: 480px;
-    margin-bottom: 10px;
+    margin: 5px 0 10px 5px;
 }
-
 .puppies-featured > img {
     width: 50px;
     height: 50px;
 }
 
-.puppies-featured > h3 {
+.name-bio {
+    display: flex;
     flex: 1;
-    background-color: red;
+    flex-direction: column;
 }
 
-.puppies-featured > p {
-    background-color: yellow;
+.name-bio > h3 {
+    background-color: red;
+    flex: 0.5;
 }
-/* ----- End of flexbox puppies on left ---- /*
+
+.name-bio > p {
+    background-color: yellow;
+    flex: 0.5;
+}
+
+/* ----- End of flexbox puppies on left ---- */
+
+.puppy-menus {
+    display: flex;
+}
+
+.media-objects {
+    flex: 0.33;
+}
+
+.puppies-profile {
+    flex: 0.66;
+}
+
+.profile {
+    height: 160px;
+    width: calc(30%);
+    float: left;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+
+.dummy {
+    display: flex; /*This would be on a container*/
+    width: calc(33%); /*This would be on a tile*/
+}
