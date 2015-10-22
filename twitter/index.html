@@ -99,7 +99,15 @@
 
   <script id="template-tweet" type="text/x-handlebars-template">
 
-
+      <article class="tweet">
+        <aside>
+          <img src="{{userImage}}">
+        </aside>
+        <section class="body">
+          <div class="title">{{userHandle}}</div>
+          <div class="message">{{userMessage}}</div>
+        </section>
+      </article>
 
   </script>
 
