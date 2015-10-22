@@ -34,8 +34,10 @@ $(function(){
     var threadTemplate = Handlebars.compile($('#template-thread').html())
 
         function renderThread(user, message){
-            return renderThread()
-
+            return renderThread({
+                renderTweet: renderTweet(user, message)
+            })
+//Instead of return, put this somewhere
     }
 
     var tweetTemplate = Handlebars.compile($('#template-tweet').html())
