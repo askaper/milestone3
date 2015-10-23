@@ -101,7 +101,7 @@
 
       <article class="tweet">
         <aside>
-          <img src="{{userImage}}">
+          <img src="{{{userImage}}}">
         </aside>
         <section class="body">
           <div class="title">{{userHandle}}</div>
@@ -113,11 +113,7 @@
 
   <script id="template-thread" type="text/x-handlebars-template">
 
-    <section class="thread">
-        {{renderTweet}}
-        <section class="replies">{{renderCompose}}</section>
 
-    </section>
 
 
 

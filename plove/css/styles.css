@@ -90,11 +90,11 @@ div.puppy-menus {
     margin: auto;
     background-color: turquoise;
     position: absolute;
-    top: 15%;
+    top: 20%;
 }
 
 .navbar > a {
-    margin-left: 20px;
+    margin: 5px 25px 5px 25px;
 }
 
 .logo {
@@ -177,14 +177,17 @@ div.puppy-menus {
 
 /* ----- Media objects, 3 puppies on the left ----- */
 
+.media-objects {
+    margin-left: 5px;
+}
 .puppies-featured {
     display: flex;
     max-width: 480px;
     margin: 5px 0 10px 5px;
 }
 .puppies-featured > img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .name-bio {
@@ -221,7 +224,7 @@ div.puppy-menus {
     vertical-align: top;
     width: calc(30%);
     float: left;
-    margin: 5px;
+    margin: 5px 10px 5px 10px;
     display: flex;
     flex-direction: column;
     background-color: yellow;

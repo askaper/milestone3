@@ -14,30 +14,25 @@
 
 $(function(){
 
-
     var user = {
         handle: '@bradwestfall',
         img: 'images/brad.png'
     }
 
-
-
     var composeTemplate = Handlebars.compile($('#template-compose').html())
 
         function renderCompose(){
-            return composeTemplate()
+            return composeTemplate({
+
+            })
 
     }
 
-//The renderThread function takes some more thought. It will need to call off to the other two render functions to get its contents, then it will take those "sub templates" and build them into the thread template. Even though renderThread won't use the user and message values directly, it will need to pass those along to the renderTweet.
-
     var threadTemplate = Handlebars.compile($('#template-thread').html())
-
         function renderThread(user, message){
-            return renderThread({
-                renderTweet: renderTweet(user, message)
-            })
-//Instead of return, put this somewhere
+            renderThread({
+            renderTweet: tweetTemplate(user, message)
+        })
     }
 
     var tweetTemplate = Handlebars.compile($('#template-tweet').html())
@@ -51,14 +46,26 @@ $(function(){
     }
 
     $('main').on('submit', '.compose', function(){
+        event.preventDefault();
         var message = $(this).find('textarea').val()
+        console.log(message)
 
-        if ($(this).parents('header').length) {
-            console.log('Were making a thread')
+
+        if ($(this).is('header > .compose')) {
+            $('.tweets').append(renderTweet(user, message)).addClass('thread')
+            $('textarea').val('')
         } else {
-            $(this).parents('.replies').append(renderTweet(user, message))
+            $(this).append(renderTweet(user, message))
         }
-        return false;
+
+//going to parent, selecting child of thread and appending to that.
+
+        // if ($(this).parents('header').length) {
+        //     console.log('Were making a thread')
+        // } else {
+        //     $(this).parents('.replies').append(renderTweet(user, message))
+        // }
+        // return false;
     })
 
     $('main').on('click', '.compose', function(){
