@@ -69,12 +69,16 @@ $(function(){
     })
 
     $('main').on('click', '.compose', function(){
-        $(this).addClass('expand')
+        $(this).toggleClass('expand')
 
     })
 
     $('main').on('click', '.thread', function(){
         $(this).addClass('expand')
 
+    })
+//I WILL GET YOU RIGHT BEFORE I LEAVE GODDAMNIT!!!11one
+    $(this).on('click', '.thread.expand', function(){
+        $(this).toggleClass('replies')
     })
 });
