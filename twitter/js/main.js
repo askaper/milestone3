@@ -25,14 +25,24 @@ $(function(){
             return composeTemplate({
 
             })
-
     }
+
+    // //	var makeForm = function renderCompose() {
+	// 	var source   = $("#template-compose").html();
+	// 	var template = Handlebars.compile(source);
+	// 	var context = {};
+	// 	var html    = template(context);
+	// 	return html;
+	// }
 
     var threadTemplate = Handlebars.compile($('#template-thread').html())
         function renderThread(user, message){
             renderThread({
-            renderTweet: tweetTemplate(user, message)
+            renderTweet: tweetTemplate(user, message),
+            'compose': makeform()
         })
+        var thread = threadTemplate(renderThread)
+        return thread
     }
 
     var tweetTemplate = Handlebars.compile($('#template-tweet').html())
@@ -57,6 +67,7 @@ $(function(){
         } else {
             $(this).append(renderTweet(user, message))
         }
+        return false
 
 //going to parent, selecting child of thread and appending to that.
 
@@ -73,12 +84,16 @@ $(function(){
 
     })
 
-    $('main').on('click', '.thread', function(){
-        $(this).addClass('expand')
+    $('main').on('click', '.tweet', function(){
+        $(this).parents('.thread').toggleClass('expand')
 
     })
+
+    // $('main').on('click', '.tweet', function(){
+    //     $(this).parents('.thread').toggleClass('expand')
+    // })
 //I WILL GET YOU RIGHT BEFORE I LEAVE GODDAMNIT!!!11one
-    $(this).on('click', '.thread.expand', function(){
-        $(this).toggleClass('replies')
-    })
+    // $(this).on('click', '.thread', function(){
+    //     $('section ').toggleClass('expand')
+    // })
 });

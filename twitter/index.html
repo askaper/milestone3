@@ -113,15 +113,28 @@
 
   <script id="template-thread" type="text/x-handlebars-template">
 
-
-
-
+      <article class="tweet">
+        <aside>
+          <img src="{{userImage}}">
+        </aside>
+        <section class="body">
+          <div class="title">{{userHandle}}</div>
+          <div class="message">{{userMessage}}</div>
+        </section>
+      </article>
 
 
   </script>
 
   <script id="template-compose" type="text/x-handlebars-template">
 
+      <form class="compose">
+        <textarea placeholder="Compose new Tweet..."></textarea>
+        <div>
+          <span class="count">140</span>
+          <button>Send</button>
+        </div>
+      </form>
 
 
   </script>
