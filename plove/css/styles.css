@@ -16,7 +16,7 @@
 *****************************************/
 
 header {
-    height: 250px;
+    height: 350px;
     background-color: magenta;
 
     margin: 0 auto;
@@ -49,7 +49,7 @@ div.1 {
 }
 
 .hero {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -59,13 +59,13 @@ main {
 }
 
 div.2 {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
 div.puppy-menus {
-    width: 80%;
-    margin:auto;
+    width: 70%;
+    margin: auto;
 }
 
 /****************************************
@@ -85,7 +85,7 @@ div.puppy-menus {
     width: 900px;
     text-align: center;*/
     width: 100%;
-    min-height: 50px;
+    min-height: 40px;
     text-align: center;
     margin: auto;
     background-color: turquoise;
@@ -94,7 +94,7 @@ div.puppy-menus {
 }
 
 .navbar > a {
-    margin: 5px 25px 5px 25px;
+    margin: 5px 15px 5px 15px;
 }
 
 .logo {
@@ -113,12 +113,10 @@ div.puppy-menus {
 
 .puppy-menus {
     display: flex;
-
 }
 
 .tile-puppies {
     flex: 0.5;
-
 }
 
 .welcome-text {
@@ -152,14 +150,14 @@ div.puppy-menus {
 /*---------- 3 boxes that overlap into the hero element ----- */
 
 .services-menu {
-    width: 80%;
+    width: 70%;
     margin: auto;
     text-align: center;
     background-color: red;
 }
 
 .services {
-    width: 290px;
+    width: 270px;
 	height: 190px;
 	display: inline-block;
 	background-color: lime;
@@ -178,16 +176,18 @@ div.puppy-menus {
 /* ----- Media objects, 3 puppies on the left ----- */
 
 .media-objects {
-    margin-left: 5px;
+    background-color: teal;
 }
+
 .puppies-featured {
     display: flex;
-    max-width: 480px;
-    margin: 5px 0 10px 5px;
+    max-width: 400px;
+    margin: 10px;
 }
+
 .puppies-featured > img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .name-bio {
@@ -212,22 +212,19 @@ div.puppy-menus {
     display: flex;
 }
 
-.media-objects {
-    flex: 0.33;
-}
-
 .puppies-profile {
-    flex: 0.66;
+    flex: 1;
+    background-color: tan;
 }
 
 .profile {
-    vertical-align: top;
-    width: calc(30%);
+    max-width: 133px;
     float: left;
-    margin: 5px 10px 5px 10px;
+    margin: 10px 10px 20px 10px;
     display: flex;
     flex-direction: column;
     background-color: yellow;
+
 }
 
 .profile > img {
@@ -235,11 +232,11 @@ div.puppy-menus {
     height: 133px;
 }
 
-.profile > h4 {
+.profile-heading {
     flex: 0.5;
 }
 
-.profile > p {
+.profile-text {
     flex: 0.5;
 }
 
