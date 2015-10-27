@@ -8,8 +8,8 @@ $(function(){
     var makeForm = function renderCompose() {
 		var source   = $("#template-compose").html();
 		var template = Handlebars.compile(source);
-		var context = {};
-		var html    = template(context);
+		var context  = {};
+		var html     = template(context);
 		return html;
 	}
 
@@ -27,7 +27,11 @@ $(function(){
     var makeTweet = function renderTweet(user, message, image) {
 		var source   = $("#template-tweet").html();
 		var template = Handlebars.compile(source);
-		var context = {User: user, message: message, image: image};
+		var context = {
+            User: user,
+            message: message,
+            image: image
+        };
 		var tweet    = template(context);
 		return tweet;
 	}
@@ -35,8 +39,8 @@ $(function(){
     $(document).on('submit', 'form', function(event){
 		event.preventDefault();
 		var message = $(this).find('textarea').val();
-		if($(this).is('header > form')) {
-			$(".tweets").prepend(makeThread(user.handle, message, user.img));
+		if ($(this).is('header > form')) {
+			$(".tweets").append(makeThread(user.handle, message, user.img));
 			$(this).find('textarea').val('');
 		} else {
 			$(this).parents('.replies').append(makeTweet(user.handle, message, user.img));
