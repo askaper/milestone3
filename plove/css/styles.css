@@ -97,6 +97,11 @@ div.puppy-menus {
     margin: 5px 15px 5px 15px;
 }
 
+.welcome-text > h3 {
+    font-size: 30px;
+    font-family: 
+}
+
 .logo {
     position: absolute;
     margin: 0;
@@ -198,7 +203,7 @@ div.puppy-menus {
 
 .name-bio > h3 {
     background-color: red;
-    flex: 0.5;
+
 }
 
 .name-bio > p {
@@ -232,10 +237,6 @@ div.puppy-menus {
 .profile > img {
     width: 133px;
     height: 133px;
-}
-
-.profile-heading {
-    flex: 0.5;
 }
 
 .profile-text {
