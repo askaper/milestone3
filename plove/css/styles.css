@@ -16,46 +16,44 @@
 *****************************************/
 
 header {
-    height: 350px;
-    background-image: url(../images/bg.jpg);
-
+    height: 450px;
+    background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
 }
 
 main {
-
     margin: 0 auto;
-    background-color: yellow;
+    background-color: #D7E1E7;
 }
 
 body {
-    background-color: green;
+    background-color: #D7E1E7;
+    font-family: 'Open Sans';
 }
 
 /****************************************
   Helpers
 *****************************************/
 
-
-
-
 /****************************************
   Layout
 *****************************************/
 
-div.1 {
-    background-color: yellow;
-}
+
 
 .hero {
-    width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    background: radial-gradient(rgba(0, 143, 172, 0.4), #008fac), url("../images/bg.jpg") no-repeat;
+}
+header {
     margin: auto;
+    width: 70%;
 }
 
 main {
-    background-color: purple;
-
+    background-color: #D7E1E7;
 }
 
 div.2 {
@@ -77,29 +75,24 @@ div.puppy-menus {
 }
 
 .navbar {
-    /*position: absolute;
-    min-height: 50px;
-    background-color: turquoise;
-    top: 15%;
-    left: 3.25%;
-    width: 900px;
-    text-align: center;*/
     width: 100%;
-    min-height: 40px;
-    text-align: center;
+    height: 50px;
     margin: auto;
-    background-color: turquoise;
     position: absolute;
     top: 20%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .navbar > a {
-    margin: 5px 15px 5px 15px;
+    display:inline-block;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
 }
 
 .welcome-text div p {
-    font-size: 30px;
-    font-family: Arial;
+    font-size: 50px;
 }
 
 .logo {
@@ -107,13 +100,20 @@ div.puppy-menus {
     margin: 0;
     top: 0;
     left: 0;
+    font-family: 'Lobster';
+    color: #fff;
+    font-size: 50px;
 }
 
 .search {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
+}
 
+.search > input {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 1px solid #7FC5CD;
 }
 
 .puppy-menus {
@@ -129,22 +129,9 @@ div.puppy-menus {
     position: absolute;
     bottom: 10%;
     width: 100%;
-    background-color: yellow;
+    color: #fff;
+    font-family: 'Arial';
 }
-
-/*.welcome-text > h1 {
-    text-align: center;
-    position: absolute;
-    bottom: 5%;
-    right: 30%;
-}
-
-.welcome-text > h6 {
-    text-align: center;
-    position: absolute;
-    bottom: 10%;
-    right: 20%;
-}*/
 
 /*---------- Media object and tile menu background --------*/
 
@@ -158,30 +145,53 @@ div.puppy-menus {
     width: 70%;
     margin: auto;
     text-align: center;
-    background-color: red;
 }
 
 .services {
-    width: 270px;
-	height: 190px;
+    width: 280px;
+	height: 140px;
 	display: inline-block;
-	background-color: lime;
+	background-color: #fff;
 	margin-left: 9px;
 	margin-right: 9px;
     text-align: center;
 	transform: translateY(-20px);
 }
 
+.services-heading {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .services > button {
-    width: 150px;
-    height: 25px;
     margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.button.left {
+    border: 2px solid #EF4A1A;
+    color: #EF4A1A;
+}
+
+.button.center {
+    border: 2px solid #87D150;
+    color: #87D150;
+}
+
+.button.right {
+    border: 2px solid #0092D1;
+    color: #0092D1;
 }
 
 /* ----- Media objects, 3 puppies on the left ----- */
 
 .media-objects {
-    background-color: teal;
+    background-color: #fff;
 }
 
 .puppies-featured {
@@ -199,16 +209,22 @@ div.puppy-menus {
     display: flex;
     flex: 1;
     flex-direction: column;
+    color: #444
+}
+
+.bio-headings {
+    font-size: 18px;
+    color: #0092D1
 }
 
 .name-bio > h3 {
-    background-color: red;
-
+    background-color: #E7F3F9;
 }
 
 .name-bio > p {
-    background-color: yellow;
+    background-color: #E7F3F9;
     flex: 0.5;
+    padding-left: 5px;
 }
 
 /* ----- End of flexbox puppies on left ---- */
@@ -219,7 +235,7 @@ div.puppy-menus {
 
 .puppies-profile {
     flex: 1;
-    background-color: tan;
+    background-color: #fff;
     display: flex;
     flex-wrap:wrap;
 }
@@ -230,8 +246,14 @@ div.puppy-menus {
     margin: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: #E2EFD7;
+    color: #376917
+}
 
+.profile-heading {
+    background-color: #87D150;
+    font-size: 14px;
+    padding: 5px;
 }
 
 .profile > img {
@@ -241,9 +263,5 @@ div.puppy-menus {
 
 .profile-text {
     flex: 0.5;
+    padding: 5px;
 }
-
-/* .dummy {
-    display: flex; /*This would be on a container
-    /*width: calc(33%); This would be on a tile
-} */
