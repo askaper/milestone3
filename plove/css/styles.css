@@ -29,7 +29,7 @@ main {
 
 body {
     background-color: #D7E1E7;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
 }
 
 /****************************************
@@ -71,7 +71,9 @@ div.puppy-menus {
 *****************************************/
 
 .search-button {
-    background-color: orange;
+    background-color: #EF4A1A;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .navbar {
@@ -113,7 +115,12 @@ div.puppy-menus {
 
 .search > input {
     background-color: rgba(255, 255, 255, 0.0);
-    border: 1px solid #7FC5CD;
+    color: #7EC6CE;
+    border: 1px solid #7EC6CE;
+}
+
+::-webkit-input-placeholder {
+   color: #7EC6CF
 }
 
 .puppy-menus {
@@ -130,7 +137,7 @@ div.puppy-menus {
     bottom: 10%;
     width: 100%;
     color: #fff;
-    font-family: 'Arial';
+    font-family: "Open Sans";
 }
 
 /*---------- Media object and tile menu background --------*/
@@ -156,6 +163,19 @@ div.puppy-menus {
 	margin-right: 9px;
     text-align: center;
 	transform: translateY(-20px);
+    box-shadow: 0 1px 1px 1px #BDC6CB;
+}
+
+.services.left {
+    border-top: 4px solid #EF4A1A;
+}
+
+.services.center {
+    border-top: 4px solid #87D150;
+}
+
+.services.right {
+    border-top: 4px solid #0092D1;
 }
 
 .services-heading {
@@ -231,6 +251,7 @@ div.puppy-menus {
 
 .puppy-menus {
     display: flex;
+    box-shadow: 0 1px 1px 1px #BDC6CB;
 }
 
 .puppies-profile {
