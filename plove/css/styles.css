@@ -24,7 +24,6 @@ header {
 
 main {
     margin: 0 auto;
-    background-color: #D7E1E7;
 }
 
 body {
@@ -50,10 +49,6 @@ body {
 header {
     margin: auto;
     width: 70%;
-}
-
-main {
-    background-color: #D7E1E7;
 }
 
 div.2 {
@@ -82,8 +77,8 @@ div.puppy-menus {
     margin: auto;
     position: absolute;
     top: 20%;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #7EC6CE;
+    border-bottom: 1px solid #7EC6CE;
 }
 
 .navbar > a {
@@ -95,6 +90,7 @@ div.puppy-menus {
 
 .welcome-text div p {
     font-size: 50px;
+    margin-bottom: 15px;
 }
 
 .logo {
@@ -110,7 +106,6 @@ div.puppy-menus {
 .search {
     position: absolute;
     right: 0;
-    top: 10px;
 }
 
 .search > input {
@@ -140,12 +135,6 @@ div.puppy-menus {
     font-family: "Open Sans";
 }
 
-/*---------- Media object and tile menu background --------*/
-
-.puppy-menus {
-    background-color: blue;
-}
-
 /*---------- 3 boxes that overlap into the hero element ----- */
 
 .services-menu {
@@ -156,7 +145,7 @@ div.puppy-menus {
 
 .services {
     width: 280px;
-	height: 140px;
+	height: 160px;
 	display: inline-block;
 	background-color: #fff;
 	margin-left: 9px;
@@ -179,18 +168,17 @@ div.puppy-menus {
 }
 
 .services-heading {
-    margin: 5px;
+    margin: 8px;
     font-size: 14px;
     font-weight: bold;
 }
 
 .services > button {
-    margin-top: 10px;
+    margin-top: 13px;
     border-radius: 5px;
     background-color: #fff;
     text-align: center;
     position: relative;
-    bottom: 5px;
 }
 
 .button.left {
